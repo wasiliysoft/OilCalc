@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ru.wasiliysoft.oilcalc.ResultActivity"
+    tools:showIn="@layout/activity_result">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            style="@style/columnTextHeader"
+            android:text="@string/text1" />
+
+        <TextView
+            style="@style/columnTextHeader"
+            android:text="@string/text2" />
+
+        <TextView
+            style="@style/columnTextHeader"
+            android:text="@string/text3" />
+
+        <TextView
+            style="@style/columnTextHeader"
+            android:text="@string/text4" />
+    </LinearLayout>
+
+    <ListView
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"  />
+
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--android:id="@+id/adView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--ads:adSize="BANNER"-->
+        <!--ads:adUnitId="@string/banner_ad_unit_id">-->
+    <!--</com.google.android.gms.ads.AdView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    signingConfigs {
+        config {
+            keyAlias 'oilcalc'
+            keyPassword 'd0cTugJA7@'
+            storeFile file('D:/AndroidStudio/workspace/key_store.jks')
+            storePassword '`x<!n1gcwm'
+        }
+    }
+    defaultConfig {
+        applicationId "ru.wasiliysoft.oilcalc_free"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 6
+        versionName "1.5"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+
+
+    repositories {
+        mavenCentral()
+    }
+
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile 'com.android.support:appcompat-v7:26.1.0'
+        compile 'com.android.support:design:26.1.0'
+        compile 'com.android.support:support-v4:26.1.0'
+//        compile 'com.yandex.android:mobmetricalib:2.62'
+//        compile 'com.google.android.gms:play-services-ads:9.6.1'
+        testCompile 'junit:junit:4.12'
+    }
+//    applicationVariants.all { variant ->
+//        println("Iterating variant: " + variant.getName());
+//
+//        variant.outputs.each { output ->
+//            def apkName =
+//                    variant.buildType.name + "." + variant.applicationId + ".build." + android.defaultConfig.versionCode;
+//            apkName += ".apk";
+//            println "*********" + "$project.buildDir/apk/" + apkName + "**********";
+//            output.outputFile = file("$project.buildDir/apk/" + apkName)
+//        }
+//    }
+}

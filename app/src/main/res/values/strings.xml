@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">OilCalc Free</string>
+
+    <string name="title_activity_settings">Параметры</string>
+
+
+    <string name="pref_title_proportion_title">Пропорция масла</string>
+    <string name="pref_title_proportion_summary">Пропорция 1 к …</string>
+    <string name="pref_default_proportion">40</string>
+
+    <string name="pref_key_proportion">Proportion</string>
+    <string name="pref_key_consumption">Consumption</string>
+    <string name="pref_key_price">Price</string>
+
+    <string name="pref_default_consumption">5</string>
+    <string name="pref_title_consumption_title">Расход топлива</string>
+    <string name="pref_title_consumption_summary">Средний расход на 100км. (л)</string>
+    <string name="pref_default_price">30</string>
+    <string name="pref_title_price_title">Стоимость топлива</string>
+    <string name="pref_title_price_summary">Цена за 1 л. топлива</string>
+    <string name="text1">Топливо\n(л)</string>
+    <string name="text2">Масло\n(мл)</string>
+    <string name="text3">Запас\nхода (км)</string>
+    <string name="text4">Сумма\n(руб)</string>
+
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+
+    <string name="banner_ad_unit_id">ca-app-pub-6866980223055256/8731699329</string>
+</resources>
